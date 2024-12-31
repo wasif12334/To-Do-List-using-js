@@ -39,7 +39,7 @@
     justify-content: space-between;
     margin-bottom: 10px;
     padding-left: 10px;
-    background-color: #888585;
+    background-color: #bdb8b8;
     border-radius: 10px;
 }
 .row >input{
@@ -50,14 +50,13 @@
     color: black;
     padding: 10px;
 }
-.row >input::placeholder{
+.row input::placeholder{
     color: black;
-    opacity: 0.5;
+    opacity: 0.4;
 }
-.row >button{
-    padding:16px 50px ;
+.row button{
+    padding:16px 20px ;
     background: rgb(182, 64, 84);
-    border-radius: 40px 10px 0px 40px;
     font-size: 15px;
     border: none;
     outline: none;
@@ -69,11 +68,12 @@ ul li{
     list-style: none;
     font-size: 16px;
     padding: 12px 8px;
+    height: 40px;
     user-select: none;
     cursor: pointer;
     display: flex;
     position: relative;
-    padding:  0px 50px 10px 50px ;
+    padding:  10px 50px 10px 50px ;
 }
 ul li::before{
     content: '  ';
@@ -96,4 +96,19 @@ ul li.checked{
 }
 ul li.checked::before{
     background-image: url(images/checked.png);
+}
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height:40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background: rgb(219, 216, 221);
 }
